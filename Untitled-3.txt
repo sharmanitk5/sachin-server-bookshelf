@@ -1,0 +1,72 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+const database = 'Bookshelf';
+const collection = 'Books';
+// The current database to use.
+use(database);
+
+// Create a new collection.
+db.getCollection(collection).insertMany([
+{ name:"Paris:The Memoir",category:"Biography",author:"Paris Hilton",publication :2022,rating:4.6},
+{ name:"Friends,Lovers and big terrible things",category:"Biography",author:"Matthew  Perry",publication:2022,rating:4.5},
+{ name:"The Extraordinary life of an ordinary life",category:"Biography",author:"PaulNewman",publication :2022,rating:4.4},
+{ name:"The 1-Page Marketing plan",category:"Business",author:"Atlan Dib",publication :2022,rating:4.6},
+{ name:"The Psychology of Money",category:"Business",author:"Morgan Housel",publication:2022,rating:4.7},
+{ name:"Your Next Five Moves",category:"Business",author:"Patrick Bet-David",publication :2022,rating:4.7},
+{ name:"Interesting Stories for curious people",category:"Comics",author:"Bill O'Neil",publication :2022,rating:4.4},
+{ name:"Lots of Knock-Knock Jokes for kids",category:"Comics",author:"Whee Winn",publication:2022,rating:4.5},
+{ name:"dinosaur Philosophy",category:"Comics",author:"James Stewart",publication :2022,rating:4.9},
+{ name:"The Fifth juror",category:"Fiction",author:"Lori Lacefield",publication :2022,rating:4.4},
+{ name:"The Memory keeper of Kyiv",category:"Fiction",author:"Erin Litteken",publication:2022,rating:4.5},
+{ name:"Midnight library",category:"Fiction",author:"Matt Haig",publication :2022,rating:4.3},
+{ name:"The Storyteller:Tales of life and Music",category:"Music",author:"Dave Grohl",publication :2022,rating:4.8},
+{ name:"Wish You were Here",category:"Music",author:"Jodi Picoult",publication:2022,rating:4.3},
+{ name:"Dreamland",category:"Music",author:"Nicholas Sparks",publication :2022,rating:4.5},
+{ name:"99:Stories of the game",category:"Sports",author:"Wayne Gretzky",publication :2022,rating:4.7},
+{ name:"Golf crossword Puzzles",category:"Sports",author:"Designer Ink",publication:2022,rating:4.3},
+{ name:"The league:How Five Rivals crated the NFL ",category:"Sports",author:"John Eisenberg",publication :2022,rating:4.6},
+{ name:"The Paper palace",category:"Travel",author:"Miranda Crowley Heller",publication :2022,rating:4.1},
+{ name:"Europe by Milk Run:A solo Travel experiment",category:"Travel",author:"Rory Moulton",publication:2022,rating:4.4},
+{ name:"Dead Mountain",category:"Travel",author:"Donnie Eichar",publication :2022,rating:4.3},
+{ name:"Knowledge Encyclopedia Humar body",category:"Science",author:"DK",publication :2022,rating:4.8},
+{ name:"Where the forests meets the Stars",category:"Science",author:"Glendy Vanderah",publication:2022,rating:4.3},
+{ name:"Super Interesting facts for smart kids",category:"Science",author:"Jordan Moore",publication :2022,rating:4.6},
+{ name:"Love,Pamela ",category:"Poetry",author:"Pamela Anderson",publication :2022,rating:4.5},
+{ name:"She is rare experience",category:"Poetry",author:"Hemy new school poet",publication:2022,rating:4.3},
+{ name:"Little book of Mindfulness",category:"Poetry",author:"Patizia Collard",publication :2022,rating:4.4},
+{ name:"Half Baked Harvest Super Simple",category:"Cookbooks",author:"Tieghan Gerard",publication :2022,rating:4.8},
+{ name:"Magnolia Table",category:"Cookbooks",author:"Joanna Gaines",publication:2022,rating:4.8},
+{ name:"Go-To Dinners",category:"Cookbooks",author:"Ina Garten",publication :2022,rating:4.7}
+
+
+]);
+
+// The prototype form to create a collection:
+/* db.createCollection( <name>,
+  {
+    capped: <boolean>,
+    autoIndexId: <boolean>,
+    size: <number>,
+    max: <number>,
+    storageEngine: <document>,
+    validator: <document>,
+    validationLevel: <string>,
+    validationAction: <string>,
+    indexOptionDefaults: <document>,
+    viewOn: <string>,
+    pipeline: <pipeline>,
+    collation: <document>,
+    writeConcern: <document>,
+    timeseries: { // Added in MongoDB 5.0
+      timeField: <string>, // required for time series collections
+      metaField: <string>,
+      granularity: <string>
+    },
+    expireAfterSeconds: <number>,
+    clusteredIndex: <document>, // Added in MongoDB 5.3
+  }
+)*/
+
+// More information on the `createCollection` command can be found at:
+// https://www.mongodb.com/docs/manual/reference/method/db.createCollection/
